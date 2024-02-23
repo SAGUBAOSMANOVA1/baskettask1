@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./script.js">
+    <script src="./script.js" defer></script>
+    <title>Basket 🛒</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <label for="productName " class="productName">Product Name:</label>
+            <input type="text" id="productName">
+            <label for="productPrice" class="productPrice"> Sale 🏷️:</label>
+            <input type="number" id="productPrice">
+            <button onclick="addToCart()" class="button-85" role="button">Add it 💲💲💲</button>
+
+
+        </div>
+
+        <div id="card">
+            <h2>Basket 🛒</h2>
+            <ul id="cartList"></ul>
+            <p id="totalPrice">Result: 0 AZN</p>
+            <button onclick="clearCart()" class="button-85" role="button">Clean Basket</button>
+        </div>
+    </div>
